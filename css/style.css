@@ -1,0 +1,123 @@
+::selection {
+    background-color: #fec260;
+  }
+body{
+    background-color: #f7ecde;
+}
+.container{
+
+    padding: 48px 12px;
+
+    & h1{
+        margin-bottom: 8px;
+        font-size: 50px;
+        font-family: "Pacifico", cursive;
+        color: #352e28;
+        width: fit-content;
+        z-index: 1;
+       
+    }
+
+    & h1::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        left: 0%;
+        right: 0%;
+        bottom: 11%;
+        background-color: #fec260;
+        z-index: -1;
+        transition-duration: .3s;
+    }
+    & h1:hover::after{
+        height: 50%;
+    }
+    & .bookmark-body{
+        margin-top: 48px;
+        padding: 24px 16px;
+        border-top:2px dashed #352e28;
+        border-bottom: 2px dashed #352e28;
+
+        & h2{
+            font-family: 'Righteous', sans-serif;
+            font-size: 25px;
+            background-image: linear-gradient(to right, #3ca55c, #d3ca63);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+
+        }
+        & .form-group{
+
+            & lable{
+                & i {
+                    padding-right: 8px;
+                }
+            }
+            & button{
+                color: #fff;
+                background-color:  #d1512d;
+                padding: 6px 48px;
+                font-size: 17px;
+
+            }
+
+            & button:hover{
+                background-color: #bb4120;
+            }     
+    }
+        
+    } 
+   
+
+}
+
+.validation-box{
+    background-color: #0007;
+   
+
+    & .box-content{
+        background-color: #fff;
+        width: 500px;
+        z-index: 10;
+
+        & .head{
+            margin-bottom: 24px;
+            & span{
+                width: 20px;
+                height: 20px;
+                background-color: #bb4120;
+            }
+            & span:nth-child(1){
+                background-color: #f15f5d;
+               }
+               & span:nth-child(2){
+                background-color:#febe2e ;
+               }
+               & span:nth-child(3){
+                background-color: #4db748;
+                   
+               }
+        }
+
+        & p{
+            font-family: "Bree Serif", serif;
+            font-size: 21px;
+            line-height: 1.3;
+            color: #352e28;
+        }
+        & ul {
+            & li{
+                padding-top: 10px;
+                font-size: 18px;
+                & i{
+                    color: #bb4120;
+                    padding: 8px;
+                }
+            }
+        }
+        
+    }
+}
+
